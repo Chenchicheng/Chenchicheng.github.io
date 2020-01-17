@@ -5,13 +5,13 @@
   
 
   
-  <title>记一次生产CPU高负载排查实践 | Hexo</title>
+  <title>记一次生产CPU高负载排查实践 | 席儒空间</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="记一次生产CPU高负载排查实践前言前几日收到服务器报警：某某ip服务器CPU负载过高。让我来定位问题。其实最终定位到的问题还是蛮好解决的，但是因为应用在docker容器中的特殊性，导致在排查过程中出现了各种问题，所以单独成文和大家分享下。 定位问题拿到问题首先上服务器上看了看，使用top命令拿到了系统中各个进程的资源占用情况。如下图  ​">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次生产CPU高负载排查实践">
 <meta property="og:url" content="http://yoursite.com/2020/01/17/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%94%9F%E4%BA%A7CPU%E9%AB%98%E8%B4%9F%E8%BD%BD%E6%8E%92%E6%9F%A5%E5%AE%9E%E8%B7%B5/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="席儒空间">
 <meta property="og:description" content="记一次生产CPU高负载排查实践前言前几日收到服务器报警：某某ip服务器CPU负载过高。让我来定位问题。其实最终定位到的问题还是蛮好解决的，但是因为应用在docker容器中的特殊性，导致在排查过程中出现了各种问题，所以单独成文和大家分享下。 定位问题拿到问题首先上服务器上看了看，使用top命令拿到了系统中各个进程的资源占用情况。如下图  ​">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="c:%5CUsers%5CHRadmin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200103114625782.png">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="c:%5CUsers%5CHRadmin%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20200103114625782.png">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="席儒空间" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -45,7 +45,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">席儒空间</a>
       </h1>
       
     </div>
