@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="极简食谱 iOS 应用支持与联系">
+  <title>极简食谱 · 应用支持</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --text: #1a1a1a;
+      --muted: #5c5c5c;
+      --link: #0969da;
+      --border: #e5e5e5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1a1a1c;
+        --text: #f0f0f0;
+        --muted: #a8a8a8;
+        --link: #58a6ff;
+        --border: #3d3d40;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 1.5rem 1.25rem 3rem;
+    }
+    .wrap {
+      max-width: 40rem;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 0.5rem;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.75rem;
+    }
+    section {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      margin-bottom: 1rem;
+      background: color-mix(in srgb, var(--bg) 92%, var(--text) 8%);
+    }
+    section h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      margin: 0 0 0.65rem;
+      font-weight: 600;
+    }
+    ul { margin: 0; padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>极简食谱</h1>
+    <p class="sub">本地菜谱与饮食计划工具（iOS）。本页用于 App Store 所列「支持网址」。</p>
+
+    <section>
+      <h2>联系开发者</h2>
+      <p>如有使用问题、建议或反馈，可通过以下方式联系：</p>
+      <ul>
+        <li>
+          电子邮件：
+          <!-- 发布到 App Store 前：将下面 mailto 与显示文字改为你常用邮箱 -->
+          <a href="mailto:your-email@example.com">your-email@example.com</a>
+          <span style="color: var(--muted); font-size: 0.9rem;">（请替换为真实邮箱）</span>
+        </li>
+        <li>
+          GitHub：
+          <a href="https://github.com/Chenchicheng" rel="noopener noreferrer">github.com/Chenchicheng</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>常见问题</h2>
+      <ul>
+        <li>菜谱与计划数据默认保存在本机；卸载 App 前请使用应用内导出功能备份 .minirecipe 文件。</li>
+        <li>订阅与用量说明以 App 内展示为准。</li>
+      </ul>
+    </section>
+
+    <footer>
+      <a href="/">返回博客首页</a>
+    </footer>
+  </div>
+</body>
+</html>
